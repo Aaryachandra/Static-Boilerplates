@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.body {
+  background-color: rgb(122, 43, 226);
+  overflow: hidden;
+  text-align: right;
+}
+.backheading {
+  color: rgb(107, 66, 203);
+  font-size: 200px;
+  width: 120%;
+  margin-left: -300px;
+  margin-top: 180px;
+  opacity: 0.5;
+  font-weight: bolder;
+}
+
+.container {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: -30%;
+  text-align: center;
+}
+
+.SEE {
+  -webkit-text-stroke: 3px rgba(255, 255, 255, 0.917);
+  color: rgba(107, 66, 203, 0.179);
+  opacity: 0.9;
+  font-size: 100px;
+}
+
+.HOW {
+  color: rgba(255, 255, 255, 0.917);
+  font-size: 75px;
+}
+
+.YOUR {
+  color: rgba(255, 255, 255, 0.917);
+  font-size: 45px;
+  font-weight: 100;
+  margin-top: 8px;
+}
+
+.button {
+  padding: 6px 8px;
+  border: none;
+  border-radius: 100%;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+.buttonimg {
+  height: 20px;
+}
+
+.scroll {
+  margin-top: 5px;
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.917);
+  opacity: 0.5;
+}
+
+.moments {
+  position: relative;
+  animation: mymove 2.3s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  40% {
+    top: 30px;
+  }
+
+  100% {
+    top: 0px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    position: absolute;
+    margin-left: 15%;
+    margin-top: -35%;
+    text-align: center;
+  }
+  .body {
+    background-color: rgb(122, 43, 226);
+    overflow: hidden;
+    text-align: right;
+  }
+  .backheading {
+    color: rgb(107, 66, 203);
+    font-size: 170px;
+    width: 130%;
+    margin-left: -300px;
+    margin-top: 180px;
+    opacity: 0.5;
+    font-weight: bolder;
+  }
+
+  .buttonimg {
+    height: 20px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .container {
+    position: absolute;
+    margin-left: 22%;
+    margin-top: -40%;
+    text-align: center;
+  }
+  .backheading {
+    color: rgb(107, 66, 203);
+    font-size: 140px;
+    width: 140%;
+    margin-left: -280px;
+    margin-top: 130px;
+    opacity: 0.5;
+    font-weight: bolder;
+  }
+  .body {
+    background-color: rgb(122, 43, 226);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .buttonimg {
+    height: 40px;
+  }
+  .SEE {
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.917);
+    color: rgba(107, 66, 203, 0.179);
+    opacity: 0.9;
+    font-size: 75px;
+  }
+
+  .HOW {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 50px;
+  }
+
+  .YOUR {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .container {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: -100%;
+    text-align: center;
+  }
+  .backheading {
+    color: rgb(107, 66, 203);
+    font-size: 100px;
+    width: 120%;
+    margin-left: -50px;
+    margin-top: 100px;
+    opacity: 0.5;
+    font-weight: bolder;
+  }
+  .body {
+    background-color: rgb(122, 43, 226);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .buttonimg {
+    height: 40px;
+  }
+  .SEE {
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.917);
+    color: rgba(107, 66, 203, 0.179);
+    opacity: 0.9;
+    font-size: 75px;
+  }
+
+  .HOW {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 50px;
+  }
+
+  .YOUR {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: -110%;
+    text-align: center;
+  }
+  .backheading {
+    color: rgb(107, 66, 203);
+    font-size: 100px;
+    width: 120%;
+    margin-left: -50px;
+    margin-top: 100px;
+    opacity: 0.5;
+    font-weight: bolder;
+  }
+  .body {
+    background-color: rgb(122, 43, 226);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .buttonimg {
+    height: 40px;
+  }
+  .SEE {
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.917);
+    color: rgba(107, 66, 203, 0.179);
+    opacity: 0.9;
+    font-size: 75px;
+  }
+
+  .HOW {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 50px;
+  }
+
+  .YOUR {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .container {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: -120%;
+    text-align: center;
+  }
+
+  .backheading {
+    color: rgb(107, 66, 203);
+    font-size: 90px;
+    width: 120%;
+    margin-left: -100px;
+    margin-top: 100px;
+    opacity: 0.5;
+    font-weight: bolder;
+  }
+  .body {
+    background-color: rgb(122, 43, 226);
+    overflow: hidden;
+    text-align: right;
+  }
+  .buttonimg {
+    height: 30px;
+  }
+  .SEE {
+    -webkit-text-stroke: 3px rgba(255, 255, 255, 0.917);
+    color: rgba(107, 66, 203, 0.179);
+    opacity: 0.9;
+    font-size: 70px;
+  }
+
+  .HOW {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 50px;
+  }
+
+  .YOUR {
+    color: rgba(255, 255, 255, 0.917);
+    font-size: 27px;
+    font-weight: 100;
+    margin-top: 8px;
+  }
+}

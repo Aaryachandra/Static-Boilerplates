@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.logo {
+  margin-top: clamp(1.5rem, 4vh, 8rem);
+  font-size: clamp(2.25rem, 5vw, 10rem);
+}
+
+#center {
+  margin: auto;
+  margin-top: 4%;
+}
+
+#button1 {
+  width: 100%;
+  padding: 0.6rem 0rem;
+  border-radius: 2rem;
+  margin-top: 4%;
+}
+
+#Signup {
+  margin-top: 2%;
+  color: #444;
+}
+
+#text {
+  margin-top: 3%;
+  color: #666;
+  margin-bottom: 7%;
+}
+
+.redirect {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 1.1rem;
+  color: #666;
+}
+
+#signin {
+  text-decoration: none;
+}
+
+#signin:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+#signin:active {
+  text-decoration: underline;
+}
+
+/* Quiz page */
+
+#container1 {
+  margin-top: 5%;
+  column-gap: 3%;
+  flex-wrap: wrap;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5%;
+  column-gap: 2%;
+}
+
+#newcard {
+  width: clamp(8rem, 18rem, 22rem);
+}

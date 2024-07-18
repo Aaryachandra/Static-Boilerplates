@@ -1,0 +1,249 @@
+:root {
+  --primary-color: #010712;
+  --secondary-color: #818386;
+  --bg-color: #fcfdfd;
+  --button-color: #3b3636;
+  --h1-color: #3f444c;
+}
+
+* {
+  margin: 0;
+  /* box-sizing: border-box; */
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-container {
+  display: flex;
+  width: 90vw;
+  height: 85vh;
+  margin: auto;
+  margin-top: 4cqi;
+  background: var(--bg-color);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left-col {
+  width: 42.5%;
+  height: 100%;
+  background-image: url("https://images.pexels.com/photos/931018/pexels-photo-931018.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  width: 10rem;
+  padding: 1.5rem;
+}
+
+.right-col1 {
+  background: var(--bg-color);
+  width: 45%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+
+  border-radius: 10px;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-item h3 {
+  color: #555;
+  margin-bottom: 0.2rem;
+  font-family: "Jost", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 0.75%;
+}
+
+.contact-item p {
+  color: #777;
+}
+
+.contact-item i {
+  color: #444;
+  background-color: rgb(213, 235, 255);
+  padding: 2.75% 3%;
+  border-radius: 100%;
+}
+
+.contactInformation,
+.labels,
+#submit,
+.description {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.contactInformation {
+  color: var(--h1-color);
+  text-transform: uppercase;
+  font-size: 2.25rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+.contact-us {
+  font-family: "Jost", sans-serif;
+  color: var(--h1-color);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+}
+
+.paragraphs {
+  color: var(--secondary-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.01rem;
+  margin: 0.25rem 0;
+}
+
+.labels,
+.description {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-size: 0.625rem;
+}
+
+#contact-form {
+  position: relative;
+  margin-top: 0.5%;
+  padding: 1rem 0;
+}
+
+.info-input,
+.info-textArea,
+.labels {
+  /* width: 40vw; */
+  display: block;
+}
+
+.paragraphs,
+placeholder,
+.info-input,
+.info-textArea {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+.info-input::placeholder,
+.info-textArea::placeholder {
+  color: var(--primary-color);
+}
+
+.info-input,
+.info-textArea {
+  color: var(--primary-color);
+  font-weight: 500;
+  background: var(--bg-color);
+  border: none;
+  border-bottom: 1px solid var(--secondary-color);
+  padding: 0.5rem 0;
+  margin-bottom: 1.35rem;
+  outline: none;
+  width: 100%;
+}
+
+.info-textArea {
+  resize: none;
+}
+
+#submit {
+  text-transform: uppercase;
+  font-weight: 300;
+  background: var(--button-color);
+  color: var(--bg-color);
+  width: 10rem;
+  height: 2.25rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.info-input:hover,
+.info-textArea:hover,
+#submit:hover {
+  opacity: 0.5;
+}
+
+#submit:active {
+  opacity: 0.8;
+}
+
+#error,
+#success-msg {
+  width: 40vw;
+  margin: 0.125rem 0;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-family: "Jost";
+  color: var(--secondary-color);
+}
+
+#success-msg {
+  transition-delay: 3s;
+}
+
+@media only screen and (max-width: 950px) {
+  .logo {
+    width: 8rem;
+  }
+  .contactInformation {
+    font-size: 1.75rem;
+  }
+  .paragraphs {
+    font-size: 0.7rem;
+  }
+  .info-input,
+  .info-textArea,
+  #submit {
+    font-size: 0.65rem;
+    width: 100%;
+    max-width: 250px;
+  }
+  .description {
+    font-size: 0.3rem;
+    margin-left: 0.4rem;
+  }
+  #submit {
+    width: 7rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .contact-container {
+    display: block;
+    width: 90vw;
+    height: 85vh;
+    margin: auto;
+    margin-top: 4cqi;
+    background: var(--bg-color);
+    align-items: center;
+  }
+  .left-col {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+
+  .right-col1 {
+    background: var(--bg-color);
+    width: 85%;
+    height: 100%;
+    margin-top: 5%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rrel="stylesheet" href="style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .row {
+        background: white;
+        border-radius: 1rem;
+      }
+      .hover-effect:hover {
+        background-color: #0011ffac;
+      }
+    </style>
+  </head>
+  <body style="background: #f8fafe">
+    <section
+      class="form d-flex align-items-center justify-content-center"
+      style="min-height: 100vh"
+    >
+      <div class="container mx-2 px-5">
+        <div class="row no-gutters shadow-sm">
+          <div class="col-lg-6 my-2">
+            <img
+              src="login.avif"
+              class="img-fluid rounded-start"
+              alt=""
+              style="
+                border-bottom-left-radius: 1 rem;
+                border-top-left-radius: 1rem;
+                object-fit: cover;
+                width: 100%;
+              "
+            />
+          </div>
+
+          <div class="col-lg-6 px-5 pt-5 my-5">
+            <h2 class="tex-secondary font-weight-bold py-3">Time-keeper</h2>
+            <h4 class="text-primary">Sign into your account</h4>
+            <form>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <input
+                    type="email"
+                    placeholder="email address"
+                    class="form-control my-3 p-3"
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <div class="input-group my-3">
+                    <input
+                      type="password"
+                      placeholder="*******"
+                      class="form-control p-3"
+                      id="password-input"
+                      class="input-group-append"
+                    />
+                    <button
+                      class="btn btn-outline-secondary"
+                      type="button"
+                      id="toggle-password"
+                      style="border: solid 0.1px #c8c8c8; border-left: none"
+                    >
+                      Show
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center gap-5 flex-wrap my-4">
+                <div class="form-check text-start">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="remember-me"
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Remember me
+                  </label>
+                </div>
+                <a href="#" class="m-0 p-0" style="text-decoration: none"
+                  >Forgot password</a
+                >
+              </div>
+              <div class="form-row">
+                <div class="col-lg-7">
+                  <button
+                    class="btn btn-primary btn-lg shadow-sm hover-effect px-5 my-1"
+                  >
+                    Login
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const togglePasswordButton = document.getElementById("toggle-password");
+      const passwordInput = document.getElementById("password-input");
+
+      togglePasswordButton.addEventListener("click", function () {
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          togglePasswordButton.textContent = "Hide";
+        } else {
+          passwordInput.type = "password";
+          togglePasswordButton.textContent = "Show";
+        }
+      });
+    </script>
+  </body>
+</html>

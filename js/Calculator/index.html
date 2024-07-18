@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <title>Calculator</title>
+  </head>
+  <body style="overflow: hidden">
+    <div class="container">
+      <div class="calculator">
+        <input id="myInput" placeholder="0" />
+        <br />
+        <button class="button" onclick="f(7)">7</button>
+        <button class="button" onclick="f(8)">8</button>
+        <button class="button" onclick="f(9)">9</button>
+        <button
+          class="button"
+          onclick="f('+')"
+          style="background-color: darkcyan"
+        >
+          +
+        </button>
+        <br />
+        <button class="button" onclick="f(4)">4</button>
+        <button class="button" onclick="f(5)">5</button>
+        <button class="button" onclick="f(6)">6</button>
+        <button
+          class="button"
+          onclick="f('-')"
+          style="background-color: darkcyan"
+        >
+          -
+        </button>
+        <br />
+        <button class="button" onclick="f(1)">1</button>
+        <button class="button" onclick="f(2)">2</button>
+        <button class="button" onclick="f(3)">3</button>
+        <button
+          class="button"
+          onclick="f('*')"
+          style="background-color: darkcyan"
+        >
+          *
+        </button>
+        <br />
+        <button class="button" onclick="f('.')">.</button>
+        <button class="button" onclick="f(0)">0</button>
+        <button class="button" onclick="Clear()">C</button>
+        <button
+          class="button"
+          onclick="f('/')"
+          style="background-color: darkcyan"
+        >
+          /
+        </button>
+        <br />
+        <button class="button" id="eq" onclick="final()">=</button>
+      </div>
+    </div>
+  </body>
+</html>

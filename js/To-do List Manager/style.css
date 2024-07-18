@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#container {
+  margin-top: 5%;
+  width: clamp(10rem, 60vw, 100rem);
+}
+
+#container1 {
+  margin-top: 5%;
+  width: clamp(10rem, 60vw, 100rem);
+}
+
+.tasks {
+  color: #555;
+}
+
+#UL li {
+  margin-top: 4%;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

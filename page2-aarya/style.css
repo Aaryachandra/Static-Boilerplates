@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.body {
+  background-color: rgb(122, 43, 226);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.backheading {
+  color: rgb(107, 66, 203);
+  opacity: 0.4;
+  font-weight: 900;
+  font-size: clamp(400%, 13vw, 1800%);
+  width: 180%;
+  margin-left: -25%;
+  margin-top: 4%;
+  position: absolute;
+  z-index: 1;
+}
+
+.frontheading {
+  color: white;
+  font-size: clamp(2.15rem, 7.5vw, 10rem);
+  margin-top: 5%;
+  z-index: 2;
+  position: relative;
+  width: 100%;
+}
+
+.container1 {
+  margin-top: 6%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0% 5%;
+  justify-content: space-between;
+}
+
+.sideimage {
+  width: 45%;
+  z-index: 2;
+}
+
+.sideimage1 {
+  z-index: 1;
+  position: absolute;
+  margin-top: -18%;
+  height: 70%;
+  margin-top: -28%;
+  margin-left: -15%;
+}
+
+.container {
+  color: #cf60dbd7;
+}
+
+.Container1 {
+  display: flex;
+  flex-direction: column;
+  flex-direction: ;
+  row-gap: 15%;
+  width: 45%;
+}
+
+.c1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.technology {
+  color: rgb(255, 255, 255);
+  font-size: clamp(1.75rem, 3.25vw, 6rem);
+  text-align: left;
+  margin-bottom: 2%;
+}
+
+.lorem {
+  color: rgb(228, 227, 227);
+  text-align: left;
+  font-size: clamp(0.7rem, 1.1vw, 6rem);
+}
+
+.button1 {
+  background-color: rgb(122, 43, 226);
+  border: none;
+  color: rgb(228, 227, 227);
+  font-size: 180%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.spacing div {
+  margin-bottom: 3%;
+}
+
+.numberedheadings {
+  color: rgba(255, 255, 255, 0.837);
+  text-align: left;
+  font-size: clamp(1rem, 1.65vw, 4rem);
+  font-weight: 500;
+  z-index: 2;
+  margin-bottom: 3%;
+}
+
+.button {
+  background-color: #efefef;
+  border: none;
+  padding: 12px 40px;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  float: left;
+  z-index: 2;
+}
+
+.button:hover {
+  background-color: #c3c2c2;
+  color: #000000;
+}
+
+@media only screen and (max-width: 700px) {
+  .container1 {
+    margin-top: 10%;
+    display: flex;
+    padding: 0% 5%;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+  }
+  .Container1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+    order: 2;
+  }
+  .sideimage {
+    width: 100%;
+    z-index: 2;
+    margin-bottom: 10%;
+    height: 25vh;
+    order: 1;
+  }
+}

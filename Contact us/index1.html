@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="Stylesheet" href="style1.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contact-container">
+      <div class="left-col">
+        <img
+          class="logo"
+          src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png"
+        />
+      </div>
+      <div class="right-col1">
+        <div>
+          <h1 class="contactInformation" >Contact info</h1>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.2rem;
+            margin-top: 4%;
+          "
+        >
+     <div class="contact-info">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+            <div>
+            <h3>Email</h3>
+            <p class="paragraphs"> Loremipsum@gmail.com</p>
+            </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-mobile-alt"></i>
+          <div>
+            <h3>Mobile</h3>
+            <p class="paragraphs">  8827635133</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i> 
+          <div>
+            <h3>Address</h3>
+            <p class="paragraphs">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+    </div>
+        </div>
+     
+
+          <h2 class="contact-us" style="margin-top: 5%">Contact us</h2>
+          <p class="paragraphs" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+          <form id="contact-form" method="post">
+            <label for="name" class="labels">Full name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Full Name"
+              class="info-input"
+              required
+            />
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email Address"
+              class="info-input"
+              required
+            />
+            <!-- <label for="number">Mobile number</label>
+            <input
+              type="number"
+              id="mobile"
+              name="mobile"
+               class="info-input"
+              placeholder="Your Mobile number"
+              required
+            /> -->
+            <label for="message">Message</label>
+            <textarea
+              rows="3"
+              placeholder="Your Message"
+              class="info-textArea"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+            <!--<a href="javascript:void(0)">--><button
+              type="submit"
+              id="submit"
+              name="submit"
+            >
+              Send</button
+            ><!--</a>-->
+          </form>
+          <div id="error"></div>
+          <div id="success-msg"></div>
+        </div>
+      </div>
+    </div>
+    <!-- <div
+      class="contain"
+      style="
+        width: 90%;
+        margin: auto;
+        height: 100vh;
+        text-align: center;
+        margin-top: 10%;
+      "
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.3258529580557!2d72.91168627540789!3d19.09335570142708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7cc3a69476b%3A0x1eabef08d13de7f0!2sGoldcrest%20Business%20Park%2C%20Nityanand%20Nagar%2C%20Ghatkopar%20West%2C%20Mumbai%2C%20Maharashtra%20400086!5e0!3m2!1sen!2sin!4v1690185773396!5m2!1sen!2sin"
+        style="border: 0; height: 70%; width: 60%"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>

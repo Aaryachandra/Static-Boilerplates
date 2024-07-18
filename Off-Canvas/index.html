@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasRight"
+      aria-controls="offcanvasRight"
+    >
+      Toggle right offcanvas
+    </button>
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Campaign 1</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="container1">
+          <img
+            src="Jane Doe.jpeg"
+            alt="..."
+            class="card-img-top rounded-circle profile-photo shadow"
+            id="SideImage"
+          />
+          <h3 class="text-dark font-weight-bold">Ervin Howell</h3>
+        </div>
+        <!-- <div style="margin-bottom: 6%; padding: 0% 2%">
+
+            <div style="align-items: flex-start">
+              <h5 class="text-dark font-weight-bold">Ervin Howell</h5>
+              <div>
+                <h6 class="text-muted">
+                  email :
+                  <span class="text-dark font-weight-bold"
+                    >shanna@melissa.tv</span
+                  >
+                </h6>
+              </div>
+              <div>
+                <h6 class="text-muted">
+                  Insta-Id :
+                  <span class="text-dark font-weight-bold">@shannamelissa</span>
+                </h6>
+              </div>
+              <div>
+                <h6 class="text-muted">
+                  Date of birth :
+                  <span class="text-dark font-weight-bold">23-07-03</span>
+                </h6>
+              </div>
+            </div>
+          </div> -->
+
+        <div
+          class="d-flex justify-content-between flex-wrap gap-3"
+          style="margin-bottom: 5%"
+        >
+          <div class="card p-2" style="flex: 1 1 58%">
+            <div class="d-flex justify-content-between">
+              <div class="card-text text-truncate" style="overflow: scroll">
+                <h6 class="text-muted"><small>Email</small></h6>
+                <h6 class="text-dark font-weight-bold">shanna@melissa.tv</h6>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2" style="flex: 1 1 36%">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="card-text text-truncate" style="overflow: scroll">
+                  <h6 class="text-muted"><small>Date of birth</small></h6>
+                  <h6 class="text-dark font-weight-bold">2023-07-03</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="d-flex justify-content-between flex-wrap gap-3"
+          style="margin-bottom: 5%"
+        >
+          <div class="card p-2" ; style="flex: 1 1 44%">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="card-text text-truncate" style="overflow: scroll">
+                  <h6 class="text-muted"><small>Insta-Id</small></h6>
+                  <h6 class="text-dark font-weight-bold">@shannamelissa</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card p-2" ; style="flex: 1 1 51%">
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div class="card-text text-truncate" style="overflow: scroll">
+                  <h6 class="text-muted"><small>Location</small></h6>
+                  <h6 class="text-dark font-weight-bold">Paris,France</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="card p-2"
+          style="width: 100%; padding: 0 8%; margin-bottom: 7%"
+        >
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h6 class="text-muted"><small>Followers</small></h6>
+                <h6 class="text-dark font-weight-bold">1.5M</h6>
+              </div>
+              <div>
+                <h6 class="text-muted"><small>Gender</small></h6>
+                <h6 class="text-dark font-weight-bold">Male</h6>
+              </div>
+              <div>
+                <h6 class="text-muted"><small>Age</small></h6>
+                <h6 class="text-dark font-weight-bold">15</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h6 class="text-muted" style="margin-top: 3%; padding: 0 3%">
+            Interests:
+            <span
+              class="badge bg-light-subtle border border-light-subtle text-light-emphasis rounded-pill"
+              >Games</span
+            >
+            <span
+              class="badge bg-light-subtle border border-light-subtle text-light-emphasis rounded-pill"
+              >fitness</span
+            >
+          </h6>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

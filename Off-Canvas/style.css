@@ -1,0 +1,19 @@
+#SideImage {
+  width: 45%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  margin: auto;
+  z-index: 1;
+  border: solid 4px white;
+  margin: 0;
+  margin-bottom: 5%;
+}
+
+.container1 {
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.card {
+  --bs-card-spacer-x: none;
+}

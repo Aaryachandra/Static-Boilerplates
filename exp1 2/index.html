@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="Stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <img src="bmw.jpeg" style="filter: grayscale(100%)" />
+      <img id="my-img" src="bmw.jpeg" />
+      <input
+        type="range"
+        min="0"
+        max="100"
+        value="50"
+        id="slider"
+        oninput="slide()"
+      />
+    </div>
+  </body>
+</html>

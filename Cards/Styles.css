@@ -1,0 +1,163 @@
+* {
+  font-family: sans-serif;
+}
+
+.layout {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.container {
+  border: solid 0.1px #999;
+  width: 320px;
+  height: 500px;
+  border-radius: 2%;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+
+.cardimg {
+  height: 55%;
+  width: 100%;
+  border-radius: 3%;
+  object-fit: cover;
+}
+
+.text {
+  padding: 10px 50px;
+}
+
+.cardbutton {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  background-color: rgb(7, 7, 87);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardbutton:hover {
+  border: none;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background-color: rgb(30, 134, 141);
+  transition: 0.3s;
+}
+
+.text1 {
+  margin: 10px;
+  color: #555;
+}
+
+.text2 {
+  margin: 10px;
+  color: #888;
+  font-size: 14px;
+}
+
+.buttonpos {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -5px;
+}
+
+.container1 {
+  border: solid 0.1px #999;
+  width: 280px;
+  height: 420px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  align-items: center;
+  padding: 20px 20px;
+}
+
+.cardimg1 {
+  height: 50%;
+  width: 100%;
+  border-radius: 7%;
+  object-fit: cover;
+}
+
+.text3 {
+  margin-top: 0px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.text4 {
+  margin-top: 4px;
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: 38px;
+  margin-right: 38px;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.fh {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.fb {
+  margin-top: 0px;
+  color: #999;
+  font-weight: 500;
+}
+
+.cardbutton1 {
+  border: none;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(7, 7, 87);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardbutton1:hover {
+  border: none;
+  border-radius: 10px;
+  width: 99%;
+  background-color: rgb(30, 134, 141);
+  transition: 0.3s;
+}
+.instagram {
+  height: 20px;
+  align-self: last baseline;
+  margin-right: 5px;
+}
+
+.cardbutton2 {
+  border: none;
+  width: 80%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(7, 7, 87);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cardbutton2:hover {
+  border: none;
+  border-radius: 10px;
+  background-color: rgb(30, 134, 141);
+  transition: 0.3s;
+}

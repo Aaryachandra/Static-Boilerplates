@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="Stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="contact-container">
+      <div class="left-col">
+        <img
+          class="logo"
+          src="https://www.indonesia.travel/content/dam/indtravelrevamp/en/logo.png"
+        />
+      </div>
+      <div class="right-col1">
+        <h1>Contact us</h1>
+        <p style="margin-top: 1rem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+
+        <form id="contact-form" method="post">
+          <label for="name">Full name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+          <label for="number">Mobile number</label>
+          <input
+            type="number"
+            id="mobile"
+            name="mobile"
+            placeholder="Your Mobile number"
+            required
+          />
+          <label for="message">Message</label>
+          <textarea
+            rows="6"
+            placeholder="Your Message"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+          <!--<a href="javascript:void(0)">--><button
+            type="submit"
+            id="submit"
+            name="submit"
+          >
+            Send</button
+          ><!--</a>-->
+        </form>
+        <div id="error"></div>
+        <div id="success-msg"></div>
+      </div>
+
+      <div class="right-col2">
+        <div>
+          <h1>Contact info</h1>
+        </div>
+        <div>
+          <!-- <h3> Email</h3> -->
+          <p><i class="fas fa-envelope"></i> Loremipsum@gmail.com</p>
+        </div>
+        <div>
+          <!-- <h3>Mobile</h3> -->
+          <p><i class="fas fa-mobile-alt"></i> 8827635133</p>
+        </div>
+        <div>
+          <!-- <h3>Address</h3> -->
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </p>
+        </div>
+        <!-- <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div> -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.3258529580557!2d72.91168627540789!3d19.09335570142708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c7cc3a69476b%3A0x1eabef08d13de7f0!2sGoldcrest%20Business%20Park%2C%20Nityanand%20Nagar%2C%20Ghatkopar%20West%2C%20Mumbai%2C%20Maharashtra%20400086!5e0!3m2!1sen!2sin!4v1690185773396!5m2!1sen!2sin"
+          width="100%"
+          height="40%"
+          style="border: 0; margin-top: 5%"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
